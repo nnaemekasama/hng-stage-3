@@ -17,6 +17,7 @@ import {
 
 import AuthDetails from "./components/Header/Header"
 import SortableItem from "./components/SortableItem/SortableItem"
+import Footer from "./components/footer/Footer"
 
 const Gallery = () => {
   const [items, setItems] = useState(data)
@@ -96,6 +97,7 @@ const Gallery = () => {
           )}
         </div>
       </section>
+      <Footer item={items.length} />
     </>
   )
 }

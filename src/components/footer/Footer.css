@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--light-blue);
+    padding: 2rem 1.5rem;
+}
+.footer >:nth-child(2) {
+    color: var(--dark-blue);
+}
+
+.footer-text {
+    color: var(--accent-color);
+    font-size: 32px;
+    font-weight: 700;
+  }
