@@ -37,7 +37,7 @@ const SortableItem = ({ item }) => {
     >
       <p className="item-id">{item.id}</p>
       {isImageLoaded ? (
-        <img src={item.photo} width={200} alt={item.id} />
+        <img src={item.photo} width={150} alt={item.id} />
       ) : (
         <Loader />
       )}
