@@ -4,6 +4,7 @@ import { data } from "./data"
 import {
   closestCenter,
   DndContext,
+  KeyboardSensor,
   MouseSensor,
   PointerSensor,
   TouchSensor,
@@ -35,7 +36,11 @@ const Gallery = () => {
     setFoundItem(item)
   }
 
-  const sensors = useSensors(useSensor(MouseSensor), useSensor(TouchSensor))
+  const sensors = useSensors(
+    useSensor(MouseSensor),
+    useSensor(TouchSensor),
+    useSensor(KeyboardSensor)
+  )
 
   const onDragEnd = (event) => {
     const { active, over } = event
