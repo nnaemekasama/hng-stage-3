@@ -5,7 +5,6 @@ import AuthDetails from "../components/Header/Header"
 const UserPage = () => {
   return (
     <div>
-      <AuthDetails />
       <Gallery />
     </div>
   )

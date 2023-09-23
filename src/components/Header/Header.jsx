@@ -34,20 +34,22 @@ const AuthDetails = () => {
 
   return (
     <div className="auth-header">
-      {authUser && (
+      <h2>CoverArt Pro</h2>
+      {authUser ? (
         <>
           <p>
-            Welcome{" "}
+            Hey{" "}
             <span className="user-icon">{`${authUser.email
-              .split("")[0]
+              .slice(0, 4)
               .toUpperCase()}`}</span>
           </p>
-          <p>This gallery is a collection of my favorite album art designs.</p>
 
           <button className="button" onClick={userSignOut}>
             Log Out
           </button>
         </>
+      ) : (
+        <button className="button">Log in</button>
       )}
     </div>
   )

@@ -59,8 +59,9 @@ const Gallery = () => {
 
   return (
     <>
-      <section className="paddings innerWidth">
+      <section className="">
         <div className="gallery-container">
+          <h1>Create & Organize Your Album Art Collection</h1>
           <div className="items-form">
             <input
               type="text"
@@ -68,12 +69,12 @@ const Gallery = () => {
               placeholder="Search album cover by id"
               onChange={(e) => handleInputChange(e.target.value)}
             />
-            <button
+            {/* <button
               className="button"
               onClick={() => handleInputChange(inputValue)}
             >
               Find item
-            </button>
+            </button> */}
           </div>
           {foundItem ? (
             <div className="flexCenter">
@@ -103,7 +104,6 @@ const Gallery = () => {
           )}
         </div>
       </section>
-      <Footer item={items.length} />
     </>
   )
 }

@@ -25,37 +25,38 @@ const SignUp = ({ authState, toggleState }) => {
   }
 
   return (
-    <div className="sign-container">
-      <form onSubmit={handleSignUp} className="flexColStart form-container">
-        <h1>Create an Account</h1>
-        {error && <ErrorMessage errorCode={error} />}
-        <label htmlFor="Email">Email</label>
-        <input
-          id="Email"
-          type="text"
-          placeholder="Enter Your Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <label htmlFor="Password">Password</label>
-        <input
-          id="Password"
-          type="password"
-          placeholder="Enter Your Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <p className="auth-check">
-          {authState ? "Don't have an account? " : "Already have an account? "}
-          <a className="" onClick={toggleState}>
-            {authState ? "Sign Up" : "Login"}
-          </a>
-        </p>
-        <button className="button" type="submit">
-          Sign Up
-        </button>
-      </form>
-    </div>
+    <form onSubmit={handleSignUp} className="form-container">
+      <div>
+        <h1>Sign Up</h1>
+        <p>Create an account to gain access to all features</p>
+      </div>
+      {error && <ErrorMessage errorCode={error} />}
+      <label htmlFor="Email">Email</label>
+      <input
+        id="Email"
+        type="text"
+        placeholder="Enter Your Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <label htmlFor="Password">Password</label>
+      <input
+        id="Password"
+        type="password"
+        placeholder="Enter Your Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <p className="auth-check">
+        {authState ? "Don't have an account? " : "Already have an account? "}
+        <a className="" onClick={toggleState}>
+          {authState ? "Sign Up" : "Login"}
+        </a>
+      </p>
+      <button className="button" type="submit">
+        Sign Up
+      </button>
+    </form>
   )
 }
 
