@@ -6,12 +6,12 @@ const Loader = () => {
     <Oval
       height={80}
       width={80}
-      color="black"
+      color="var(--accent-color)"
       wrapperStyle={{}}
       wrapperClass=""
       visible={true}
       ariaLabel="oval-loading"
-      secondaryColor="#4fa94d"
+      secondaryColor="var(--dark-blue)"
       strokeWidth={2}
       strokeWidthSecondary={2}
     />
