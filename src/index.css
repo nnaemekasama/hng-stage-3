@@ -84,38 +84,9 @@ a {
   flex-wrap: wrap;
 }
 
-.flexStart {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
 
-.flexEnd {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
 
-.flexColCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
 
-.flexColStart {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.flexColEnd {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
 
 
 

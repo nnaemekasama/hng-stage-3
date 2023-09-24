@@ -8,21 +8,10 @@
     color: var(--dark-blue);
     font-size: 14px;
 }
-.auth-header > h2 {
+
+
+.auth-header > .brand {
     text-decoration: underline;
+    font-size: 18px;
 }
 
-
-.user-icon {
-    padding: 8px;
-    background-color: var(--dark-blue);
-    border-radius: 100px;
-    border: 1px solid var(--gray);
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--gray);
-}
-
-@media (max-width: 768px){
-    
-}

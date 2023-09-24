@@ -34,22 +34,20 @@ const AuthDetails = () => {
 
   return (
     <div className="auth-header">
-      <h2>CoverArt Pro</h2>
       {authUser ? (
         <>
-          <p>
-            Hey{" "}
-            <span className="user-icon">{`${authUser.email
-              .slice(0, 4)
-              .toUpperCase()}`}</span>
-          </p>
+          <p className="brand">CoverGalleria</p>
 
           <button className="button" onClick={userSignOut}>
-            Log Out
+            Sign Out
           </button>
         </>
       ) : (
-        <button className="button">Log in</button>
+        <>
+          <p className="brand">CoverGalleria</p>
+
+          <button className="button">Sign In</button>
+        </>
       )}
     </div>
   )

@@ -61,7 +61,15 @@ const Gallery = () => {
     <>
       <section className="">
         <div className="gallery-container">
-          <h1>Create & Organize Your Album Art Collection</h1>
+          <div className="gallery-header">
+            <h1>Create & Organize Your Album Art Collection</h1>
+            <p>
+              Our user-friendly drag-and-drop feature puts you in control,
+              allowing you to design a personalized gallery that reflects your
+              unique musical journey.
+            </p>
+          </div>
+
           <div className="items-form">
             <input
               type="text"
